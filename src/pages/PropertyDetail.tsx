@@ -32,9 +32,9 @@ export default function PropertyDetail() {
         {/* Mosaic Gallery */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12 h-[400px] md:h-[600px]">
           <div className="md:col-span-2 h-full overflow-hidden rounded-sm group">
-            <img 
-              src={property.images[0]} 
-              alt={property.title} 
+            <img
+              src={property.images[0]}
+              alt={property.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               referrerPolicy="no-referrer"
               decoding="async"
@@ -43,9 +43,9 @@ export default function PropertyDetail() {
           <div className="hidden md:grid grid-cols-2 grid-rows-2 col-span-2 gap-4 h-full">
             {property.images.slice(1, 5).map((img, i) => (
               <div key={i} className="overflow-hidden rounded-sm group">
-                <img 
-                  src={img} 
-                  alt={`${property.title} ${i + 2}`} 
+                <img
+                  src={img}
+                  alt={`${property.title} ${i + 2}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                   loading="lazy"
@@ -133,9 +133,9 @@ export default function PropertyDetail() {
             <div className="sticky top-32 glass-morphism p-8 rounded-sm space-y-8">
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" 
-                    alt="Agent" 
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
+                    alt="Agent"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />

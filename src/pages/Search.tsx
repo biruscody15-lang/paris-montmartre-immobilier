@@ -33,7 +33,7 @@ export default function Search() {
                 <h1 className="text-3xl font-serif mb-2">{title}</h1>
                 <p className="text-text-secondary text-sm">{filteredProperties.length} résultats trouvés à Montmartre</p>
               </div>
-              <button 
+              <button
                 onClick={() => setFilterOpen(!filterOpen)}
                 className="flex items-center gap-2 px-4 py-2 border border-white/10 rounded-sm hover:border-primary transition-colors text-xs uppercase tracking-widest"
               >
@@ -43,7 +43,7 @@ export default function Search() {
             </div>
             {/* Filters (Mobile/Desktop Toggle) */}
             {filterOpen && (
-              <motion.div 
+              <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: 'auto', opacity: 1 }}
                 className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 p-4 bg-card-bg rounded-sm border border-white/5"
@@ -81,14 +81,14 @@ export default function Search() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {filteredProperties.map((property) => (
-                <Link 
-                  key={property.id} 
+                <Link
+                  key={property.id}
                   to={`/biens/${property.id}`}
                   className="group block bg-card-bg border border-white/5 rounded-sm overflow-hidden hover:border-primary/30 transition-all duration-500"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
-                    <img 
-                      src={property.images[0]} 
+                    <img
+                      src={property.images[0]}
                       alt={property.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       referrerPolicy="no-referrer"
@@ -128,20 +128,20 @@ export default function Search() {
         {/* Map Placeholder */}
         <div className="hidden lg:block w-2/5 bg-[#111] relative overflow-hidden border-l border-white/5">
           <div className="absolute inset-0 opacity-40 grayscale contrast-125">
-            <img 
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" 
+            <img
+              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop"
               alt="Map Background"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] to-transparent pointer-events-none"></div>
-          
+
           {/* Mock Pins */}
           <div className="absolute top-1/4 left-1/3 w-4 h-4 bg-primary rounded-full border-2 border-black shadow-[0_0_15px_rgba(193,155,108,0.8)] animate-pulse"></div>
           <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-primary rounded-full border-2 border-black shadow-[0_0_15px_rgba(193,155,108,0.8)] animate-pulse delay-75"></div>
           <div className="absolute bottom-1/3 right-1/4 w-4 h-4 bg-primary rounded-full border-2 border-black shadow-[0_0_15px_rgba(193,155,108,0.8)] animate-pulse delay-150"></div>
-          
+
           <div className="absolute bottom-8 left-8 right-8 glass-morphism p-4 rounded-sm">
             <p className="text-[10px] uppercase tracking-widest text-primary mb-1">Localisation</p>
             <p className="text-sm font-light">Explorez les biens exclusifs sur la Butte Montmartre.</p>

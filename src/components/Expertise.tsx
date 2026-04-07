@@ -39,7 +39,7 @@ export default function Expertise() {
           className="relative aspect-square lg:aspect-auto lg:h-[600px] overflow-hidden rounded-sm shadow-2xl"
         >
           <img
-            src="https://images.unsplash.com/photo-1555992828-ca4dbe893e55?q=75&w=1000&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1567684014761-b65e2e59b9eb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0ZW1lbnRzfGVufDB8fDB8fHww"
             alt="Architecture Montmartre"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

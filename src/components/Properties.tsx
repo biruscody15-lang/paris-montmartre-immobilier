@@ -26,7 +26,7 @@ function PropertyCard({ property, index }: { property: typeof properties[0], ind
           </div>
           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500"></div>
         </div>
-        
+
         <div className="space-y-2">
           <p className="text-primary font-bold text-lg">{property.price}</p>
           <h3 className="text-xl font-serif text-text-main group-hover:text-primary transition-colors duration-300 leading-tight">
@@ -74,7 +74,7 @@ export default function Properties() {
             <PropertyCard key={property.id} property={property} index={index} />
           ))}
         </div>
-        
+
         <div className="mt-20 text-center">
           <Link to="/biens" className="inline-block px-10 py-4 border border-white/10 text-text-main hover:border-primary hover:text-primary transition-all duration-300 uppercase tracking-widest text-xs font-bold">
             Voir tout le catalogue

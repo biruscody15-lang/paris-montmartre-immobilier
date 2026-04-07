@@ -22,9 +22,9 @@ export default function About() {
             </p>
           </div>
           <div className="relative aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=75&w=1200&auto=format&fit=crop" 
-              alt="Montmartre View" 
+            <img
+              src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=75&w=1200&auto=format&fit=crop"
+              alt="Montmartre View"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
               decoding="async"
